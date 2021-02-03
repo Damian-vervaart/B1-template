@@ -13,7 +13,7 @@ body, html{
   margin: 0;
   padding: 0;
 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Heartbeat, Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #FCFCFC;
 }
 
@@ -70,6 +70,16 @@ main{
   padding: 1em;
 }
 
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.emphasize{
+  box-shadow: 1px 0px 5px  #27AE60, 1px -0px 5px #27AE60;
+  padding: 1em;
+}
+
 table{
   margin-top: 1em;
   width: 100%;
@@ -108,6 +118,7 @@ article h2{
   background-position: center;
   background-size: cover;
   text-align: center;
+  text-shadow:  0 0 0 #FCFCFC,       -1px -1px 0 #FCFCFC,         1px -1px 0 #FCFCFC,       -1px 1px 0 #FCFCFC,       1px 1px 0 #FCFCFC
 }
 article h2.fun-for-family{
   background-image: url('../images/family-fun-george-arthur-pflueger.jpg');
@@ -149,6 +160,7 @@ button{
   border: 2px solid #FCFCFC;
   color: #000000;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .payment-option{
@@ -186,10 +198,15 @@ footer{
 */
 
 @media (max-width: 480px) {
-
+  .hidden-on-lg{
+    display:  block;
+  }
+  .hidden-on-sm{
+    display: none;
+  }
 }
 
-/* 
+/*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
@@ -214,11 +231,11 @@ footer{
 */
 @font-face {
   font-family: 'Heartbeat';
-  src:  url('fonts/heartbeat.eot') format('eot'),
-        url('fonts/heartbeat.otf') format('otf'),
-        url('fonts/heartbeat.woff') format('woff'),
-        url('fonts/heartbeat.svg') format('svg'),
-        url('fonts/heartbeat.ttf') format('ttf');
+  src:  url('../fonts/heartbeat.eot') format('eot'),
+        url('../fonts/heartbeat.otf') format('otf'),
+        url('../fonts/heartbeat.woff') format('woff'),
+        url('../fonts/heartbeat.svg') format('svg'),
+        url('../fonts/heartbeat.ttf') format('ttf');
 }
 
 /*
