@@ -94,8 +94,8 @@ table thead, table tbody{
   border-bottom: 1px solid #303030;
 }
 
-table th.slim{
-  width: 100px;
+table th.slim th{
+width: 100px;
 }
 
 table tfoot{
@@ -166,8 +166,20 @@ button{
 .payment-option{
   height: 64px;
 }
+article{
+  border: none;
+}
+article h2{
+  border-left: 5px solid #27AE60;
+  text-align: left;
+  padding: 0px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
 
 .sidy-by-side{
+  display: flex;
+  justify-content: space-between;
 }
 
 .description{
